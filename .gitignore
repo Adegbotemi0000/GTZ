@@ -1,0 +1,28 @@
+# Duplicate/zipped copies
+GTZ Print app source file/
+GTZ Print app source file.zip
+
+# Build artifacts
+build/
+dist/
+installer_output/
+extras/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# App runtime data (local DB, generated output)
+{assets,templates,database,qr_codes,output}/
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+
+# graphify analysis output
+graphify-out/

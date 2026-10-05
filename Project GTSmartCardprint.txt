@@ -1,0 +1,25 @@
+Project: GTSmartCardprint
+Python + PyQt5 desktop app for staff ID card printing.
+File structure:
+
+main.py — entry point
+ui/main_window.py — sidebar nav
+ui/styles.qss — stylesheet
+ui/pages/ — dashboard, database, template, qr, preview, print, settings pages
+core/database.py — SQLite + Excel/CSV
+core/renderer.py — Pillow card renderer
+core/printer.py — QPrinter single + batch print
+
+Fixes applied so far:
+
+✅ App name → GTSmartCardprint, sidebar title gold/visible
+✅ Staff DB import — flexible Excel/CSV, first+last name merge, no placeholder staff ID, visible dropdowns
+
+Still to fix (in order):
+3. Template page — apply selected template to card, drag-drop editor, live preview with real staff data, font selector, card fields = Name + Staff ID + Photo + QR only
+4. QR matching — recognise firstname_lastname format, add Clear button
+5. Preview — landscape orientation, apply template, select specific staff for batch
+6. Print — prompt printer on click, fix white dropdown text, fix OneDrive connection issue
+7. Settings — update About to: Developed by GT-ZINO/Xtreme Cr8
+
+Copy that and paste it when you start a new thread. I'll pick up right where we left off.
